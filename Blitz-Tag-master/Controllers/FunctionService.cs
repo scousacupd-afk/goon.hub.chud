@@ -482,7 +482,7 @@ namespace Blitz_Tag.Controllers
                         .Set(p => p.RoomInfo.UserName, request.Nickname)
                     );
 
-                    await Requests.Post<string>("https://discord.com/api/webhooks/1428929389072089261/YYbm1GYUDHTKRu1P0uvcYw4CgXiBwoKPbxQ9OuQCIzZ-lQi7ftWAnFpz-_agsuXwRlPb", new DiscordWebhook
+                    await Requests.Post<string>("", new DiscordWebhook
                     {
                         Embeds = [
                             new DiscordEmbed
@@ -527,7 +527,7 @@ namespace Blitz_Tag.Controllers
                                 .Set(p => p.RoomInfo.UserName, request.Nickname)
                             );
 
-                            await Requests.Post<string>("https://discord.com/api/webhooks/1428929389072089261/YYbm1GYUDHTKRu1P0uvcYw4CgXiBwoKPbxQ9OuQCIzZ-lQi7ftWAnFpz-_agsuXwRlPb", new DiscordWebhook
+                            await Requests.Post<string>("", new DiscordWebhook
                             {
                                 Embeds = [
                                     new DiscordEmbed
@@ -615,7 +615,7 @@ namespace Blitz_Tag.Controllers
                                     reason = Convert.ToInt32(request.Data[1]);
                                 }
 
-                                await Requests.Post<string>("https://discord.com/api/webhooks/1432520337572102156/Grv3bKRBXyVXtFCz_mBj9YWcCt6_ge9cRDhssQgOzUyDSXuQLP_s93w7LxF6PdFrkzkJ", new DiscordWebhook
+                                await Requests.Post<string>("", new DiscordWebhook
                                 {
                                     Embeds = [
                                         new DiscordEmbed
@@ -665,7 +665,7 @@ namespace Blitz_Tag.Controllers
 
                                 var formatted = string.Join(" ", parts);
 
-                                await Requests.Post<string>("https://discord.com/api/webhooks/1432520337572102156/Grv3bKRBXyVXtFCz_mBj9YWcCt6_ge9cRDhssQgOzUyDSXuQLP_s93w7LxF6PdFrkzkJ", new DiscordWebhook
+                                await Requests.Post<string>("", new DiscordWebhook
                                 {
                                     Embeds = [
                                         new DiscordEmbed
